@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import com.devsuperior.movieflix.entities.User;
 import com.devsuperior.movieflix.repositories.UserRepository;
 
+
 @Component
 public class JwtTokenEnhancer implements TokenEnhancer{
 	
