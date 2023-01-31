@@ -17,13 +17,13 @@ public class AppConfig {
 	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-
-    @Bean
-    JwtAccessTokenConverter accessTokenConverter() {
-        JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
-        tokenConverter.setSigningKey(jwtSecret);
-        return tokenConverter;
-    }
+	
+	@Bean
+	public JwtAccessTokenConverter accessTokenConverter() {
+		JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
+		tokenConverter.setSigningKey(jwtSecret);
+		return tokenConverter;
+	}
 
 	@Bean
 	public JwtTokenStore tokenStore() {
