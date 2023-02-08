@@ -35,6 +35,7 @@ private Long id;
 	public ReviewDTO(Review entity, User user) {
 		this(entity);
 		this.user = new UserDTO(user);
+		
 	}
 
 	public Long getId() {

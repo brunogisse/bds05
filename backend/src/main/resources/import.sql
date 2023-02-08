@@ -1,8 +1,8 @@
 INSERT INTO tb_user (name, email, password) VALUES ('Bob Brown', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, email, password) VALUES ('Ana Flower', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
-INSERT INTO tb_role (authority, user_id) VALUES ('VISITOR', 1);
-INSERT INTO tb_role (authority, user_id) VALUES ('MEMBER', 2);
+INSERT INTO tb_role (authority, user_id) VALUES ('ROLE_VISITOR', 1);
+INSERT INTO tb_role (authority, user_id) VALUES ('ROLE_MEMBER', 2);
 
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
@@ -18,9 +18,9 @@ INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUE
 
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Filme bacana com a Sandra Bullock', 1, 2);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Adoro filmes de terror!', 2, 2);
-INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Clint Eastwood faz filmes há um tempão!', 3, 1);
+INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Clint Eastwood faz filmes há um tempão!', 3, 2);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Eu não gostei', 4, 2);
-INSERT INTO tb_review (text, movie_id, user_id) VALUES ('A DC não aprende mesmo', 4, 1);
+INSERT INTO tb_review (text, movie_id, user_id) VALUES ('A DC não aprende mesmo', 4, 2);
 INSERT INTO tb_review (text, movie_id, user_id) VALUES ('Prefiro superman', 4, 2);
 
 

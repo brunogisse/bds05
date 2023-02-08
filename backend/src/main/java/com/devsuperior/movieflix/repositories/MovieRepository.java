@@ -19,6 +19,6 @@ public interface MovieRepository extends JpaRepository<Movie, Long>{
 	
 	@Query("SELECT obj FROM Movie obj "
 			+ "JOIN FETCH obj.reviews "
-			+ "WHERE (:movie IS NULL OR obj = :movie)" )
+			+ "WHERE obj = :movie")
 	List<Movie> findMovieReviews(Movie movie);
 }
